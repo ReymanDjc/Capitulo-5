@@ -15,5 +15,18 @@ namespace Factorial
         {
             InitializeComponent();
         }
+
+        private void CalcularBotton_Click(object sender, EventArgs e)
+        {
+            int digiteNumero, factorial = 1;
+
+            digiteNumero = int.Parse(DigiteNumerotextBox1.Text);
+
+            for (int x = 1; x < digiteNumero + 1; x++)
+            {
+                factorial = factorial * x;
+            }
+            FactorialtextBox2.Text = factorial.ToString();
+        }
     }
 }
